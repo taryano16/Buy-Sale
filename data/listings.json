@@ -1,0 +1,112 @@
+[
+  {
+    "id": "sample-1",
+    "title": "Oak dining table, ready for a new home",
+    "price": 240,
+    "category": "Furniture",
+    "description": "Solid oak table with a few years of good dinners in it. Seats six and has a small mark on one corner.",
+    "location": "Brooklyn, NY",
+    "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-12T14:00:00.000Z"
+  },
+  {
+    "id": "sample-2",
+    "title": "Film camera with a little character",
+    "price": 85,
+    "category": "Electronics",
+    "description": "A dependable 35mm point-and-shoot, tested and working. Includes a soft case and fresh batteries.",
+    "location": "Queens, NY",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-11T09:30:00.000Z"
+  },
+  {
+    "id": "sample-3",
+    "title": "Woven lounge chair",
+    "price": 120,
+    "category": "Furniture",
+    "description": "Lightweight woven chair in lovely condition. Comfortable, sturdy, and easy to carry up a walk-up.",
+    "location": "Brooklyn, NY",
+    "image": "https://images.unsplash.com/photo-1598300053653-55d81e5f9f8d?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-10T16:15:00.000Z"
+  },
+  {
+    "id": "sample-4",
+    "title": "Canvas weekend tote",
+    "price": 32,
+    "category": "Fashion",
+    "description": "Heavy canvas bag with a roomy main pocket and a zipped inside compartment. Barely used.",
+    "location": "Manhattan, NY",
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-09T12:45:00.000Z"
+  },
+  {
+    "id": "sample-5",
+    "title": "Ceramic table lamp",
+    "price": 48,
+    "category": "Home & Living",
+    "description": "Hand-glazed ceramic base in a warm green, paired with a crisp linen shade. Bulb included.",
+    "location": "Jersey City, NJ",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-08T11:00:00.000Z"
+  },
+  {
+    "id": "sample-6",
+    "title": "Classic city bike",
+    "price": 180,
+    "category": "Sports",
+    "description": "A simple single-speed for easy city rides. Recently tuned up, with a front basket and a good lock.",
+    "location": "Brooklyn, NY",
+    "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-07T08:20:00.000Z"
+  },
+  {
+    "id": "sample-7",
+    "title": "Unlocked iPhone 13, 128 GB",
+    "price": 285,
+    "category": "Electronics",
+    "description": "Unlocked iPhone 13 in great working condition. Battery health is 88%; includes a charging cable and clear case.",
+    "location": "Brooklyn, NY",
+    "image": "https://images.unsplash.com/photo-1511709268805-92a2d0e6a2c9?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-13T15:30:00.000Z"
+  },
+  {
+    "id": "sample-8",
+    "title": "Nintendo Switch with dock and games",
+    "price": 210,
+    "category": "Electronics",
+    "description": "Nintendo Switch in excellent condition with dock, Joy-Con controllers, case, and three family-friendly games.",
+    "location": "Queens, NY",
+    "image": "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-13T12:10:00.000Z"
+  },
+  {
+    "id": "sample-9",
+    "title": "PlayStation 5 Slim console",
+    "price": 390,
+    "category": "Electronics",
+    "description": "PS5 Slim disc edition, gently used and factory reset. Comes with one DualSense controller and HDMI cable.",
+    "location": "Manhattan, NY",
+    "image": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-12T18:45:00.000Z"
+  },
+  {
+    "id": "sample-10",
+    "title": "Wireless over-ear headphones",
+    "price": 65,
+    "category": "Electronics",
+    "description": "Comfortable wireless headphones with clear sound and a long battery life. Includes a soft travel pouch and charging cable.",
+    "location": "Jersey City, NJ",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-12T10:05:00.000Z"
+  },
+  {
+    "id": "sample-11",
+    "title": "iPad Air with protective case",
+    "price": 320,
+    "category": "Electronics",
+    "description": "iPad Air in very good condition, reset and ready to use. Includes a protective folio case and USB-C charging cable.",
+    "location": "Brooklyn, NY",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1000&q=85",
+    "createdAt": "2026-10-11T16:20:00.000Z"
+  }
+]

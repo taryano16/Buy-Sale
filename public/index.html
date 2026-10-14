@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2eb">
+    <meta name="description" content="Find good things with more life in them. A neighborhood marketplace for buying and selling pre-loved finds.">
+    <title>Second Story | Good things, another go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="Second Story home"><span class="wordmark-icon" aria-hidden="true">s</span> second story</a>
+      <nav class="header-links" aria-label="Main navigation">
+        <a class="active" href="#market">Explore</a>
+        <a href="#how-it-works">Our little corner</a>
+      </nav>
+      <button class="button button-dark header-sell" type="button" data-open-form><span aria-hidden="true">＋</span> Sell an item</button>
+    </header>
+
+    <main>
+      <section class="intro" id="market">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> THE NEIGHBORHOOD MARKETPLACE</p>
+          <h1>Good things<br>get <em>another go.</em></h1>
+          <p class="intro-description">A little less new. A lot more you. Find the pieces, projects, and practical things that are ready for their next chapter.</p>
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+            <input id="search-input" type="search" placeholder="What are you looking for?" autocomplete="off" aria-label="Search listings">
+            <button class="search-button" id="search-button" type="button">Find it</button>
+          </div>
+          <div class="intro-note"><span aria-hidden="true">↳</span> Find your next favorite, just around the corner.</div>
+        </div>
+        <div class="intro-art" aria-label="A sunny corner with a chair, plant, and table">
+          <img class="art-main" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=90" alt="Sunlit living room furnished with secondhand finds">
+          <div class="art-label"><span class="art-label-dot"></span><span>FIND YOUR<br>NEXT FAVORITE</span><span class="art-label-arrow">↗</span></div>
+          <div class="art-sticker" aria-hidden="true"><span>GOOD<br>STUFF<br>↓</span></div>
+        </div>
+      </section>
+
+      <section class="market-section" aria-labelledby="market-title">
+        <div class="market-heading">
+          <div><p class="eyebrow">THE GOOD FINDS</p><h2 id="market-title">A fresh look around</h2></div>
+          <label class="sort-control">Sort by <select id="sort-select" aria-label="Sort listings"><option value="newest">Just added</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></label>
+        </div>
+        <div class="category-list" role="group" aria-label="Filter by category">
+          <button class="category-chip selected" type="button" data-category="All items">Everything <span>✳</span></button>
+          <button class="category-chip" type="button" data-category="Furniture">Furniture</button>
+          <button class="category-chip" type="button" data-category="Electronics">Electronics</button>
+          <button class="category-chip" type="button" data-category="Home & Living">Home &amp; living</button>
+          <button class="category-chip" type="button" data-category="Fashion">Clothing &amp; bags</button>
+          <button class="category-chip" type="button" data-category="Sports">Outdoors</button>
+          <button class="category-chip" type="button" data-category="Other">Other things</button>
+        </div>
+        <div class="results-meta"><p id="results-count" aria-live="polite">Finding the good stuff...</p><button class="clear-filters" id="clear-filters" type="button">Clear filters <span aria-hidden="true">×</span></button></div>
+        <div class="listing-grid" id="listing-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden><span class="empty-mark">⌕</span><h3>No finds this time.</h3><p>Try another search or category. The good stuff is out there.</p><button class="button button-outline" type="button" data-open-form>Be the first to list one</button></div>
+      </section>
+
+      <section class="sell-banner" id="how-it-works">
+        <div class="sell-banner-mark" aria-hidden="true">↗</div>
+        <div><p class="eyebrow">A SECOND STORY STARTS HERE</p><h2>Your shelf has someone else's favorite on it.</h2></div>
+        <button class="button button-light" type="button" data-open-form>Give it a new home <span aria-hidden="true">→</span></button>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="wordmark" href="/" aria-label="Second Story home"><span class="wordmark-icon" aria-hidden="true">s</span> second story</a><p>Good things deserve another go.</p><span>Made for your neighborhood <span aria-hidden="true">✳</span></span></footer>
+
+    <dialog class="listing-dialog" id="listing-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-top"><div><p class="eyebrow">PASS IT ALONG</p><h2 id="dialog-title">List something lovely.</h2></div><button class="icon-button" type="button" id="close-dialog" aria-label="Close form">×</button></div>
+      <p class="dialog-intro">A few details, and it’s out in the world.</p>
+      <form id="listing-form">
+        <label class="field-label">What are you selling?<input name="title" required minlength="3" maxlength="80" placeholder="e.g. A very good reading chair"></label>
+        <div class="field-row"><label class="field-label">Price <span class="input-prefix"><span>$</span><input name="price" type="number" min="0.01" step="0.01" required placeholder="0.00"></span></label><label class="field-label">Category<select name="category" required><option value="" disabled selected>Choose one</option><option>Furniture</option><option>Electronics</option><option>Home &amp; Living</option><option>Fashion</option><option>Sports</option><option>Other</option></select></label></div>
+        <label class="field-label">A little about it<textarea name="description" required minlength="10" maxlength="1000" rows="3" placeholder="Condition, details, why you loved it..."></textarea></label>
+        <div class="field-row"><label class="field-label">Your neighborhood<input name="location" required minlength="2" maxlength="60" placeholder="e.g. Greenpoint, Brooklyn"></label><label class="field-label">Photo URL <span class="optional-label">optional</span><input name="image" type="url" placeholder="https://..."></label></div>
+        <p class="form-feedback" id="form-feedback" role="alert"></p>
+        <button class="button button-dark submit-button" type="submit">Put it out there <span aria-hidden="true">→</span></button>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
